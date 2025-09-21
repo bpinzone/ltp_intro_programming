@@ -7,7 +7,7 @@ import os
 from time import sleep
 import time
 
-from life_logic import is_alive_next_gen
+from life_logic import is_cell_alive_next_gen
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 
 import pygame
@@ -91,7 +91,7 @@ class Grid:
 
                 # TODO: replace witih actual function
                 # self.alive_next_gen[row][col] = self.cells[row][col - 1].get_alive()
-                self.alive_next_gen[row][col] = is_alive_next_gen(self.cells[row][col].get_alive(), alive_neighbors)
+                self.alive_next_gen[row][col] = is_cell_alive_next_gen(self.cells[row][col].get_alive(), alive_neighbors)
 
         for row in range(0, self.height):
             for col in range(0, self.width):
