@@ -1,4 +1,3 @@
-from collections.abc import Callable
 
 from geometry import Rectangle
 from ui_render_primitives import draw_juicy_rectangle, draw_text, draw_rectangle
@@ -94,9 +93,9 @@ class BoolButton:
 class Button:
     all_buttons = []
     def __init__(self,
-        text: [None, str],
+        text,
         text_color,
-        button_color, on_click: Callable[[], None],
+        button_color, on_click,
         single_click_only = True):
 
         self.screen_section = None
@@ -106,7 +105,7 @@ class Button:
 
         self.button_color = button_color
 
-        self.on_click : Callable[[], None] = on_click
+        self.on_click = on_click
 
         self.single_click_only = single_click_only
 

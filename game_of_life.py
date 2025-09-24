@@ -16,7 +16,6 @@ from enum import Enum, auto
 from dataclasses import dataclass
 from geometry import Rectangle
 from color_grid import ColorGrid 
-from collections.abc import Callable
 from colors import *
 
 from ui_buttons import BoolButton, Button, LabelledIntegerControl
