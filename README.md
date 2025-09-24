@@ -14,6 +14,8 @@
 ## Opening VS Code
 4. Open the vscode app
     - Then Click File -> Open Folder -> Open the folder you just extracted.
+    - Be sure to open the folder than contains all the files. Not a folder that contains a folder containing the files...
+
 
 5. On the left side you should see a list of files. Open "life_logic.py"
     - This is the code you'll be editing later. But first lets try to run it.

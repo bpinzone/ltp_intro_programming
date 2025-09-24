@@ -42,7 +42,7 @@ BROWN = (165, 42, 42)
 GRAY = (128, 128, 128)
 
 
-def get_color(color: Color) -> tuple[int, int, int]:
+def get_color(color: Color):
     if color == Color.BLUE:
         return BLUE
     if color == Color.PURPLE:

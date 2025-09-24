@@ -4,17 +4,17 @@ from geometry import Rectangle
 
 k_rect_thickness = 2
 
-def draw_rectangle_outline(surface, rect: Rectangle, color : tuple[int, int, int], thickness=k_rect_thickness):
+def draw_rectangle_outline(surface, rect: Rectangle, color, thickness=k_rect_thickness):
     assert rect is not None
     py_rect = pygame.Rect(rect.left, rect.top, rect.width, rect.height)
     pygame.draw.rect(surface, color, py_rect, thickness)
 
-def draw_rectangle(surface, rect: Rectangle, color : tuple[int, int, int]):
+def draw_rectangle(surface, rect: Rectangle, color):
     assert rect is not None
     py_rect = pygame.Rect(rect.left, rect.top, rect.width, rect.height)
     pygame.draw.rect(surface, color, py_rect)
 
-def draw_juicy_rectangle(surface, rect: Rectangle, color : tuple[int, int, int]):
+def draw_juicy_rectangle(surface, rect: Rectangle, color):
     assert rect is not None
 
     outer_rect = rect
@@ -29,7 +29,7 @@ def draw_juicy_rectangle(surface, rect: Rectangle, color : tuple[int, int, int])
     draw_rectangle(surface, inner_rect, inner_color)
 
 # So far only tried with a single character
-def draw_text(surface: pygame.Surface, screen_section: Rectangle, text: str, text_color: tuple[int, int, int]):
+def draw_text(surface: pygame.Surface, screen_section: Rectangle, text: str, text_color):
     assert screen_section is not None
     py_screen_section = pygame.Rect(screen_section.left, screen_section.top, screen_section.width, screen_section.height)
 

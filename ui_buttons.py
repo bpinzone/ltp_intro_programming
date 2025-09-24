@@ -95,8 +95,8 @@ class Button:
     all_buttons = []
     def __init__(self,
         text: [None, str],
-        text_color: [None, tuple[int, int, int]],
-        button_color: tuple[int, int, int], on_click: Callable[[], None],
+        text_color,
+        button_color, on_click: Callable[[], None],
         single_click_only = True):
 
         self.screen_section = None
@@ -104,7 +104,7 @@ class Button:
         self.text = text
         self.text_color = text_color
 
-        self.button_color : tuple[int, int, int] = button_color
+        self.button_color = button_color
 
         self.on_click : Callable[[], None] = on_click
 
