@@ -19,7 +19,9 @@ def do_circles_intersect(c1_position_x, c1_position_y, c1_diameter,
     Returns:
         True if the circles intersect, False otherwise.
     """
-                
+
+    # use distance formula:
+    # https://en.wikipedia.org/wiki/Distance
     dx = c1_position_x - c2_position_x
     dy = c1_position_y - c2_position_y
     distance_between_circle_centers = math.sqrt(dx * dx + dy * dy)
