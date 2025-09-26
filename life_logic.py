@@ -5,17 +5,17 @@ def is_cell_alive_next_gen(is_currently_alive, num_alive_neighbors):
     For a single cell, determine if it will be alive in the next generation.
 
     Args:
-        is_currently_alive: Whether the cell is currently alive.
-        num_alive_neighbors: The number of alive neighbors the cell has.
+        is_currently_alive: A boolean. Whether the cell is currently alive in this generation.
+        num_alive_neighbors: A number. Indicates how many alive neighbors the cell has this generation.
 
     Returns:
         True if the cell will be alive in the next generation, False otherwise.
-    
-    Old Rules:
+
+    Old Rules: (What the code currently does)
         Any live cell stays alive.
         Any dead cell becomes alive if any of its neighbors are alive.
 
-    New Rules:
+    New Rules: (What you should make the code do)
         Any live cell with fewer than two live neighbours dies, as if by underpopulation.
         Any live cell with two or three live neighbours lives on to the next generation.
         Any live cell with more than three live neighbours dies, as if by overpopulation.

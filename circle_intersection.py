@@ -8,13 +8,13 @@ def do_circles_intersect(c1_position_x, c1_position_y, c1_diameter,
     Two circles intersect if the distance between their centers is less than or equal to the sum of their radii.
 
     Args:
-        c1_position_x: The x-coordinate of the center of the first circle.
-        c1_position_y: The y-coordinate of the center of the first circle.
-        c1_diameter: The diameter of the first circle.
+        c1_position_x: A number. The x-coordinate of the center of the first circle.
+        c1_position_y: A number. The y-coordinate of the center of the first circle.
+        c1_diameter: A number. The diameter of the first circle.
 
-        c2_position_x: The x-coordinate of the center of the second circle.
-        c2_position_y: The y-coordinate of the center of the second circle.
-        c2_diameter: The diameter of the second circle.
+        c2_position_x: A number. The x-coordinate of the center of the second circle.
+        c2_position_y: A number. The y-coordinate of the center of the second circle.
+        c2_diameter: A number. The diameter of the second circle.
 
     Returns:
         True if the circles intersect, False otherwise.
