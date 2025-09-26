@@ -1,7 +1,7 @@
 # LTP - Intro to Programming
 
 ## Download and Installation
-0. Download this pdf to make the links clickable.
+0. Download this pdf to make the links clickable. (Button in top right).
 1. Download and install Visual Studio Code ("VS Code")
     - [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
